@@ -51,10 +51,13 @@
     [super didReceiveMemoryWarning];
 }
 
+// 画面が表示される直前に実行される
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     [self animationPopFrontScaleUp];
+    // TODO:念の為にここでサウンド停止する　原因は後で調査
+    [self stopAudio];
 }
 
 // 倍返しボタン押下
@@ -115,6 +118,7 @@
         //  再生回数：1回
         //  速度の設定：あり
         //  速度：引数rate
+        audio.currentTime = 0;
         audio.volume = 0.8;
         audio.numberOfLoops = 0;
         audio.enableRate = YES;
@@ -130,6 +134,7 @@
     }
 }
 
+// オーディオ停止
 -(void)stopAudio {
     NSLog(@"%s", __func__);
     

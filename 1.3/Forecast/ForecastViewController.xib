@@ -19,14 +19,14 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="n67853931b047de3e.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-qT-IYG">
-                            <rect key="frame" x="-3" y="-8" width="330" height="240"/>
+                            <rect key="frame" x="-8" y="-8" width="330" height="240"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBv-m4-X5f">
-                    <rect key="frame" x="114" y="330" width="93" height="38"/>
+                    <rect key="frame" x="114" y="262" width="93" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                     <state key="normal" title="倍返し">
@@ -37,7 +37,7 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAR-EO-5xZ">
-                    <rect key="frame" x="111" y="376" width="99" height="45"/>
+                    <rect key="frame" x="111" y="308" width="99" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                     <state key="normal" title="10倍返し">
