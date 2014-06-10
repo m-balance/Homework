@@ -15,6 +15,11 @@
     // TODO:Audio関連は後ほ別ファイルに切り出す
     @private AVAudioPlayer *audio;
     @private NSURL *audio_url;
+        
+    // ボタン
+    __weak IBOutlet UIImageView *_img_logo;
+    __weak IBOutlet UIButton *_btn_double10;    
+    __weak IBOutlet UIButton *_btn_double;
 }
 
 @end
@@ -37,12 +42,11 @@
     // ロード時にAudioオブジェクトを生成する
     audio_url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"hanzawa" ofType:@"m4a"]];
     audio = [[AVAudioPlayer alloc] initWithContentsOfURL:audio_url error:nil];
-
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"position"];
-    animation.duration = 2.5; // アニメーション速度
-    animation.repeatCount = 1; // 繰り返し回数
-    
     [super viewDidLoad];
+    
+    // ボタンは非表示
+    _btn_double.hidden = YES;
+    _btn_double10.hidden = YES;
 }
 
 // メモリ不足時に呼び出される
@@ -58,6 +62,8 @@
     [self animationPopFrontScaleUp];
     // TODO:念の為にここでサウンド停止する　原因は後で調査
     [self stopAudio];
+    
+    [self animetionLogo];
 }
 
 // 倍返しボタン押下
@@ -147,6 +153,38 @@
     @finally {
         NSLog(@"Successful stop of the audio");
     }
+}
+
+// アニメーション
+-(void)animetionLogo {
+    
+    // ロゴが上から降ってくる
+    [UIView animateWithDuration:2.0f
+                          delay:1.0f
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
+                         NSLog(@"アニメーション開始");
+                         _img_logo.center = CGPointMake(_img_logo.center.x, -200);
+                         _img_logo.center = CGPointMake(_img_logo.center.x, 500);
+                     } completion:^(BOOL finished) {
+                         // アニメーション終了時
+                         NSLog(@"アニメーション終了");
+                         
+                         // ロゴをバウンドさせてみる
+                         [UIView animateWithDuration:0.3f
+                                               delay:0.0f
+                                             options:UIViewAnimationOptionCurveLinear
+                                          animations:^{
+                                              NSLog(@"アニメーション開始");
+                                              _img_logo.center = CGPointMake(_img_logo.center.x, _img_logo.center.y-3);
+                                              _img_logo.center = CGPointMake(_img_logo.center.x, _img_logo.center.y+3);
+                                          } completion:^(BOOL finished) {
+                                              // ボタンを表示
+                                              _btn_double.hidden = NO;
+                                              _btn_double10.hidden = NO;
+                                          }];
+                         
+                     }];
 }
 
 @end

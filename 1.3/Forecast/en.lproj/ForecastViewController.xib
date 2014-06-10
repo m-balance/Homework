@@ -6,6 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForecastViewController">
             <connections>
+                <outlet property="_btn_double" destination="CBv-m4-X5f" id="6cg-Dd-0Df"/>
+                <outlet property="_btn_double10" destination="DAR-EO-5xZ" id="nJD-6t-NqH"/>
+                <outlet property="_img_logo" destination="o4g-qT-IYG" id="YoK-zj-8VE"/>
+                <outlet property="btn_double10" destination="DAR-EO-5xZ" id="DJ8-iR-GHc"/>
+                <outlet property="img_logo" destination="o4g-qT-IYG" id="j1P-yw-50o"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,19 +19,8 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="viewLogo" translatesAutoresizingMaskIntoConstraints="NO" id="b3Z-fN-cFP">
-                    <rect key="frame" x="-2" y="26" width="325" height="223"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <subviews>
-                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="n67853931b047de3e.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-qT-IYG">
-                            <rect key="frame" x="-8" y="-8" width="330" height="240"/>
-                            <autoresizingMask key="autoresizingMask"/>
-                        </imageView>
-                    </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                </view>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBv-m4-X5f">
-                    <rect key="frame" x="114" y="262" width="93" height="38"/>
+                    <rect key="frame" x="117" y="270" width="93" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
                     <state key="normal" title="倍返し">
@@ -47,6 +41,10 @@
                         <action selector="pushPlay10:" destination="-1" eventType="touchUpInside" id="VSB-S2-eoQ"/>
                     </connections>
                 </button>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" restorationIdentifier="img_logo" image="n67853931b047de3e.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-qT-IYG">
+                    <rect key="frame" x="-8" y="17" width="330" height="240"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.86668779259999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>

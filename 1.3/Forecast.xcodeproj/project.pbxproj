@@ -19,8 +19,8 @@
 		A967EB8A19435FDD00DE4710 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A967EB8819435FDD00DE4710 /* InfoPlist.strings */; };
 		A967EB8C19435FDD00DE4710 /* ForecastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A967EB8B19435FDD00DE4710 /* ForecastTests.m */; };
 		A967EB981943601700DE4710 /* ForecastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A967EB961943601700DE4710 /* ForecastViewController.m */; };
-		A967EB991943601700DE4710 /* ForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A967EB971943601700DE4710 /* ForecastViewController.xib */; };
 		A967EBA01943667600DE4710 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A967EB9F1943667600DE4710 /* AVFoundation.framework */; };
+		A96A799C1946AE210019D365 /* ForecastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96A799E1946AE210019D365 /* ForecastViewController.xib */; };
 		A9764D7C19441B330007386A /* ForecastViewModalController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9764D7A19441B330007386A /* ForecastViewModalController.m */; };
 		A9764D7D19441B330007386A /* ForecastViewModalController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9764D7B19441B330007386A /* ForecastViewModalController.xib */; };
 		A9764D7F19444A920007386A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9764D7E19444A920007386A /* QuartzCore.framework */; };
@@ -62,8 +62,8 @@
 		A967EB8B19435FDD00DE4710 /* ForecastTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForecastTests.m; sourceTree = "<group>"; };
 		A967EB951943601700DE4710 /* ForecastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastViewController.h; sourceTree = "<group>"; };
 		A967EB961943601700DE4710 /* ForecastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastViewController.m; sourceTree = "<group>"; };
-		A967EB971943601700DE4710 /* ForecastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastViewController.xib; sourceTree = "<group>"; };
 		A967EB9F1943667600DE4710 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A96A799D1946AE210019D365 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ForecastViewController.xib; sourceTree = "<group>"; };
 		A9764D7919441B330007386A /* ForecastViewModalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForecastViewModalController.h; sourceTree = "<group>"; };
 		A9764D7A19441B330007386A /* ForecastViewModalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForecastViewModalController.m; sourceTree = "<group>"; };
 		A9764D7B19441B330007386A /* ForecastViewModalController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForecastViewModalController.xib; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 				A967EB7619435FDD00DE4710 /* ForecastAppDelegate.m */,
 				A967EB951943601700DE4710 /* ForecastViewController.h */,
 				A967EB961943601700DE4710 /* ForecastViewController.m */,
-				A967EB971943601700DE4710 /* ForecastViewController.xib */,
+				A96A799E1946AE210019D365 /* ForecastViewController.xib */,
 				A9764D7919441B330007386A /* ForecastViewModalController.h */,
 				A9764D7A19441B330007386A /* ForecastViewModalController.m */,
 				A9764D7B19441B330007386A /* ForecastViewModalController.xib */,
@@ -280,7 +280,7 @@
 				A9764D8C1944B13A0007386A /* 4.jpg in Resources */,
 				A9764D8E1944B13A0007386A /* 2.jpg in Resources */,
 				A967EB7119435FDD00DE4710 /* InfoPlist.strings in Resources */,
-				A967EB991943601700DE4710 /* ForecastViewController.xib in Resources */,
+				A96A799C1946AE210019D365 /* ForecastViewController.xib in Resources */,
 				A9764D7D19441B330007386A /* ForecastViewModalController.xib in Resources */,
 				A967EB7919435FDD00DE4710 /* Images.xcassets in Resources */,
 				A9764D861944A5DC0007386A /* hanzawa.m4a in Resources */,
@@ -344,6 +344,14 @@
 				A967EB8919435FDD00DE4710 /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A96A799E1946AE210019D365 /* ForecastViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A96A799D1946AE210019D365 /* en */,
+			);
+			name = ForecastViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

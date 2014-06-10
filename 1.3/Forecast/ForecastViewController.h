@@ -12,5 +12,4 @@
 #import "ForecastViewModalController.h"
 
 @interface ForecastViewController : UIViewController<ForecastViewDelegate>
-
 @end
