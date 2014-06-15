@@ -163,6 +163,19 @@
                           delay:1.0f
                         options:UIViewAnimationOptionCurveEaseInOut
                      animations:^{
+                         CGFloat angle;
+                         angle = 180 * M_PI / 180.0;
+                         _img_logo.transform = CGAffineTransformMakeRotation(angle);
+                         angle = 360 * M_PI / 180.0;
+                         _img_logo.transform = CGAffineTransformMakeRotation(angle);
+                     } completion:^(BOOL finished) {
+                     }
+    ];
+/*
+    [UIView animateWithDuration:2.0f
+                          delay:1.0f
+                        options:UIViewAnimationOptionCurveEaseInOut
+                     animations:^{
                          NSLog(@"アニメーション開始");
                          _img_logo.center = CGPointMake(_img_logo.center.x, -200);
                          _img_logo.center = CGPointMake(_img_logo.center.x, 500);
@@ -182,9 +195,12 @@
                                               // ボタンを表示
                                               _btn_double.hidden = NO;
                                               _btn_double10.hidden = NO;
-                                          }];
+                                          }
+                          ];
                          
-                     }];
+                     }
+     ];
+*/
 }
 
 @end

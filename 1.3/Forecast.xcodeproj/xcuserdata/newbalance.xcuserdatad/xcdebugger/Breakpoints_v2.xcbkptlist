@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Forecast/ForecastViewController.m"
-            timestampString = "424066106.364025"
+            timestampString = "424089938.130437"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "180"
+            endingLineNumber = "180"
             landmarkName = "-animetionLogo"
             landmarkType = "5">
          </BreakpointContent>

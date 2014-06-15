@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -9,6 +9,7 @@
                 <outlet property="_btn_double" destination="CBv-m4-X5f" id="6cg-Dd-0Df"/>
                 <outlet property="_btn_double10" destination="DAR-EO-5xZ" id="nJD-6t-NqH"/>
                 <outlet property="_img_logo" destination="o4g-qT-IYG" id="YoK-zj-8VE"/>
+                <outlet property="btn2" destination="CBv-m4-X5f" id="Ldr-Hd-ksJ"/>
                 <outlet property="btn_double10" destination="DAR-EO-5xZ" id="DJ8-iR-GHc"/>
                 <outlet property="img_logo" destination="o4g-qT-IYG" id="j1P-yw-50o"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -19,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBv-m4-X5f">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CBv-m4-X5f">
                     <rect key="frame" x="117" y="270" width="93" height="38"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
@@ -30,7 +31,7 @@
                         <action selector="pushPlay:" destination="-1" eventType="touchUpInside" id="rSD-jU-Ch9"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAR-EO-5xZ">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DAR-EO-5xZ">
                     <rect key="frame" x="111" y="308" width="99" height="45"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="24"/>
@@ -41,7 +42,7 @@
                         <action selector="pushPlay10:" destination="-1" eventType="touchUpInside" id="VSB-S2-eoQ"/>
                     </connections>
                 </button>
-                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" restorationIdentifier="img_logo" image="n67853931b047de3e.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="o4g-qT-IYG">
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="img_logo" image="n67853931b047de3e.jpg" id="o4g-qT-IYG">
                     <rect key="frame" x="-8" y="17" width="330" height="240"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
