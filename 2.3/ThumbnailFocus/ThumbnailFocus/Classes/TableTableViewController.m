@@ -9,6 +9,7 @@
 #import "TableTableViewController.h"
 
 @interface TableTableViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *lblTest;
 
 @end
 

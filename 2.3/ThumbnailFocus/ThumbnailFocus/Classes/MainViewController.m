@@ -8,10 +8,12 @@
 
 #import "MainViewController.h"
 #import "ThumbnailsViewController.h"
+#import "ThumbnailsViewPadController.h"
 
 @interface MainViewController ()
 @property (weak, nonatomic) IBOutlet UIView *contentView;
 @property (strong, nonatomic) ThumbnailsViewController *thumbnailsViewController;
+@property (strong, nonatomic) ThumbnailsViewPadController *thumbnailsViewPadController;
 
 @end
 
@@ -20,6 +22,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
     self.thumbnailsViewController = [[ThumbnailsViewController alloc] initWithNibName:nil bundle:nil];
     [self addChildViewController:self.thumbnailsViewController];
     [self.contentView addSubview:self.thumbnailsViewController.view];

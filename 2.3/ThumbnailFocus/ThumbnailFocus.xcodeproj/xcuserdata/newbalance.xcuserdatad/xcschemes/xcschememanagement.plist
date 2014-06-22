@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ThumbnailFocus copy.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ThumbnailFocus.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A9EC61F9194EADFD002C9CBC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DA28B77C171FA45700B1D982</key>
 		<dict>
 			<key>primary</key>

@@ -33,6 +33,7 @@ static CGFloat const kAnimationDuration = 0.5;
 
 - (void)installOnView:(UIView *)view
 {
+    NSLog(@"%s", __func__);
     UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self
                                                                                  action:@selector(handleFocusGesture:)];
     [view addGestureRecognizer:tapGesture];
@@ -41,6 +42,7 @@ static CGFloat const kAnimationDuration = 0.5;
 
 - (FocusViewController *)focusViewControllerForView:(UIView *)mediaView
 {
+    NSLog(@"focusViewControllerForView");
     UIImage *image = ((UIImageView *)mediaView).image;
     if(image == nil) return nil;
 
@@ -79,6 +81,7 @@ static CGFloat const kAnimationDuration = 0.5;
     self.isZooming = YES;
 #warning ★HomeWork：余裕がある方はZoomアニメーションも作って見てみてください。
 
+    // ちょっとズームはかなり手抜きですサーセン
     CGAffineTransform transform = CGAffineTransformMakeScale(2,2);
     [UIView animateWithDuration:kAnimationDuration
                      animations:^{

@@ -10,6 +10,8 @@
 
 @interface ThumbnailsViewPadController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *imgView;
+
 @end
 
 @implementation ThumbnailsViewPadController
@@ -26,7 +28,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+    UIImage *uiImage = [UIImage imageNamed:@"4.jpg"];
+    self.imgView.image = uiImage;
 }
 
 - (void)didReceiveMemoryWarning

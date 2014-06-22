@@ -10,10 +10,27 @@
 
 @interface ThumbnailsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIImageView *imgPhoto;
+
 @property (strong, nonatomic) FocusManager *focusManager;
 @end
 
 @implementation ThumbnailsViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+
+    // iPhoneとiPadでxibファイルを変える
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
+        nibNameOrNil = @"ThumbnailsViewController";
+    }
+    else {
+        nibNameOrNil = @"ThumbnailsViewControlleriPad";
+    }
+    
+    // Xibファイル名を元に、インスタンスを生成する
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    return self;
+}
 
 - (void)viewDidLoad
 {
@@ -21,6 +38,11 @@
 
     self.focusManager = [[FocusManager alloc] init];
     self.focusManager.delegate = self;
+    
+    // iPadの処理
+    if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
+        [self.focusManager installOnView:self.imgPhoto];
+    }
 }
 
 - (NSUInteger)supportedInterfaceOrientations
@@ -33,6 +55,7 @@
 #pragma mark - FocusDelegate
 - (UIViewController *)parentViewControllerForFocusManager
 {
+    NSLog(@"parentViewControllerForFocusManager");
     return self.parentViewController;
 }
 
