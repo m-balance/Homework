@@ -104,13 +104,135 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ThumbnailFocus/Classes/ThumbnailsViewController.m"
-            timestampString = "425113349.158509"
+            timestampString = "425197472.055168"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "5">
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "imageViews"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ThumbnailsViewController imageViews]"
+                  moduleName = "ThumbnailFocus"
+                  urlString = "file:///Users/newbalance/Documents/iPhone_app/Forecast/Homework/2.3/ThumbnailFocus/ThumbnailFocus/Classes/ThumbnailsViewController.m"
+                  timestampString = "425197476.867332"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ThumbnailsViewController setImageViews:]"
+                  moduleName = "ThumbnailFocus"
+                  urlString = "file:///Users/newbalance/Documents/iPhone_app/Forecast/Homework/2.3/ThumbnailFocus/ThumbnailFocus/Classes/ThumbnailsViewController.m"
+                  timestampString = "425197476.869677"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ThumbnailFocus/Classes/ThumbnailsViewController.m"
+            timestampString = "425197713.366468"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "@interface ThumbnailsViewController()"
+            landmarkType = "2">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ThumbnailsViewController focusManager]"
+                  moduleName = "ThumbnailFocus"
+                  urlString = "file:///Users/newbalance/Documents/iPhone_app/Forecast/Homework/2.3/ThumbnailFocus/ThumbnailFocus/Classes/ThumbnailsViewController.m"
+                  timestampString = "425198792.075193"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ThumbnailsViewController setFocusManager:]"
+                  moduleName = "ThumbnailFocus"
+                  urlString = "file:///Users/newbalance/Documents/iPhone_app/Forecast/Homework/2.3/ThumbnailFocus/ThumbnailFocus/Classes/ThumbnailsViewController.m"
+                  timestampString = "425198792.075459"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ThumbnailFocus/Classes/ThumbnailsViewController.m"
+            timestampString = "425198934.311029"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "tableView"
+            landmarkType = "19">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ThumbnailsViewController tableView]"
+                  moduleName = "ThumbnailFocus"
+                  urlString = "file:///Users/newbalance/Documents/iPhone_app/Forecast/Homework/2.3/ThumbnailFocus/ThumbnailFocus/Classes/ThumbnailsViewController.m"
+                  timestampString = "425207432.435198"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ThumbnailsViewController setTableView:]"
+                  moduleName = "ThumbnailFocus"
+                  urlString = "file:///Users/newbalance/Documents/iPhone_app/Forecast/Homework/2.3/ThumbnailFocus/ThumbnailFocus/Classes/ThumbnailsViewController.m"
+                  timestampString = "425207432.43538"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

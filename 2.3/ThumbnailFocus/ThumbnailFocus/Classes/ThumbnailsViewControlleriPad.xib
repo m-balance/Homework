@@ -6,8 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ThumbnailsViewController">
             <connections>
-                <outlet property="imgPhoto" destination="qmz-iY-Dcx" id="R66-hs-Cev"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="0AR-fo-lcM"/>
+                <outletCollection property="imageViews" destination="qmz-iY-Dcx" id="Ww5-Xm-ugw"/>
+                <outletCollection property="imageViews" destination="XUy-S7-Z6h" id="ibv-X6-EaT"/>
+                <outletCollection property="imageViews" destination="8ca-Fd-wYv" id="IT6-Ej-iU5"/>
+                <outletCollection property="imageViews" destination="xIU-Hg-4HM" id="wZP-q0-4Vq"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,12 +29,27 @@
                     <rect key="frame" x="20" y="55" width="320" height="180"/>
                     <autoresizingMask key="autoresizingMask"/>
                 </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="8ca-Fd-wYv">
+                    <rect key="frame" x="20" y="254" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="3.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XUy-S7-Z6h">
+                    <rect key="frame" x="358" y="55" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xIU-Hg-4HM">
+                    <rect key="frame" x="358" y="254" width="320" height="180"/>
+                    <autoresizingMask key="autoresizingMask"/>
+                </imageView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
         </view>
     </objects>
     <resources>
+        <image name="1.jpg" width="320" height="180"/>
+        <image name="2.jpg" width="320" height="180"/>
+        <image name="3.jpg" width="320" height="180"/>
         <image name="4.jpg" width="320" height="180"/>
     </resources>
 </document>

@@ -10,7 +10,7 @@
 
 @interface ThumbnailsViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIImageView *imgPhoto;
+@property (weak, nonatomic) IBOutletCollection (UIImageView) NSArray *imageViews;
 
 @property (strong, nonatomic) FocusManager *focusManager;
 @end
@@ -39,9 +39,14 @@
     self.focusManager = [[FocusManager alloc] init];
     self.focusManager.delegate = self;
     
-    // iPadの処理
+    // iPadの処理 subviewから要素をたどってUIImageViewのみfocusManagerに追加する
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
-        [self.focusManager installOnView:self.imgPhoto];
+        NSArray *views = self.view.subviews;
+        for(NSObject *obj in views) {
+            if([obj isKindOfClass:[UIImageView class]]){
+                [self.focusManager installOnView:(UIImageView *)obj];
+            }
+        }
     }
 }
 

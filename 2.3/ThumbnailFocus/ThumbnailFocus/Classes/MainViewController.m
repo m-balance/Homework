@@ -34,7 +34,7 @@
 // 本来shouldAutorotateToInterfaceOrientationで設定していたが、iOS6からはsupportedInterfaceOrientationsになる
 - (NSUInteger)supportedInterfaceOrientations
 {
-    NSLog(@"%s", __func__);
+//    NSLog(@"%s", __func__);
 
     // デバイス別に回転の向きを決定
     if(UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) {
@@ -56,6 +56,7 @@
 // デバイスの回転開始時に呼び出される
 -(void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)FromInterfaceOrientation duration:(NSTimeInterval)duration{
     // 縦表示（ホームボタン下）
+/*
     if(FromInterfaceOrientation == UIInterfaceOrientationPortrait){
         NSLog(@"will to   Portrait");
     }else if(FromInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown ){
@@ -67,10 +68,12 @@
     }else{
         NSLog(@"will 何が起きた？！");
     }
+*/
 }
 
 // デバイスの回転後に呼び出される
 -(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)FromInterfaceOrientation {
+/*
     if(FromInterfaceOrientation == UIInterfaceOrientationPortrait){
         NSLog(@"did  from Portrait");
     }else if(FromInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown ){
@@ -82,6 +85,7 @@
     }else{
         NSLog(@"did  何が起きた？！");
     }
+*/
 }
 
 #warning ⬇ HomeWork
