@@ -169,6 +169,9 @@
                          angle = 360 * M_PI / 180.0;
                          _img_logo.transform = CGAffineTransformMakeRotation(angle);
                      } completion:^(BOOL finished) {
+                         // ボタンを表示
+                         _btn_double.hidden = NO;
+                         _btn_double10.hidden = NO;
                      }
     ];
 /*
